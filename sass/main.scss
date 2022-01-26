@@ -3,7 +3,7 @@
 @import './utils/common';
 @import './components/page-header';
 
-/* шапка */
+// Шапка
 
 .header {
   border-bottom: 1px solid $header-border-color;
@@ -14,24 +14,13 @@
   align-items: center;
 }
 
-.header-links {
+.header-nav {
   display: flex;
   align-items: center;
 }
 
-.main-menu {
-  display: flex;
-}
-
-.contacts-header {
-  display: flex;
-  margin-left: auto;
-}
-
-/* логотип */
+// Логотип
 .logo {
-  margin-right: 93px;
-
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   text-decoration: none;
@@ -39,17 +28,38 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: $accent-color;
+  &--header {
+    margin-right: 93px;
+  }
+  &--footer {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
 }
 
-.logo-text-header {
-  color: $header-color;
-}
-.logo-text-footer {
-  color: $secondary-text-color;
+.logo__text {
+  &--header-text-color {
+    color: $header-color;
+  }
+  &--footer-text-color {
+    color: $secondary-text-color;
+  }
 }
 
-/* главное меню */
-.main-menu-link {
+// Главное меню
+.main-menu {
+  display: flex;
+}
+
+.main-menu__item {
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.main-menu__link {
   display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -62,25 +72,43 @@
   letter-spacing: 0.02em;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
-.main-menu-item {
-  position: relative;
-}
-
-.main-menu-item:not(:last-child),
-.contacts-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.main-menu-link:hover,
-.main-menu-link:focus {
+// Текущая страница
+.current {
   color: $accent-color;
+  &::after {
+    position: absolute;
+    bottom: -1px;
+
+    content: '';
+    display: block;
+    height: 4px;
+    width: 100%;
+
+    background-color: $accent-color;
+    border-radius: 2px;
+  }
+}
+
+// Контакты в шапке
+.contacts {
+  display: flex;
+  margin-left: auto;
 }
 
 .contacts-item {
   display: flex;
   align-items: center;
+}
+
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .icon-envelope,
@@ -112,23 +140,6 @@
 .address-link:hover,
 .address-link:focus {
   color: $accent-color;
-}
-
-.current-page {
-  color: $accent-color;
-}
-
-.current-page::after {
-  position: absolute;
-  bottom: -1px;
-
-  content: '';
-  display: block;
-  height: 4px;
-  width: 100%;
-
-  background-color: $accent-color;
-  border-radius: 2px;
 }
 
 /* герой */
@@ -550,12 +561,6 @@
 .address-box {
   flex-grow: 1;
   margin-right: 70px;
-}
-
-.footer .logo {
-  display: inline-block;
-  margin-bottom: 20px;
-  margin-right: 0;
 }
 
 .address {
