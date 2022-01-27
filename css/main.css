@@ -62,34 +62,6 @@ img {
           align-items: center;
 }
 
-.logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  text-decoration: none;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #2196f3;
-}
-
-.logo--header {
-  margin-right: 93px;
-}
-
-.logo--footer {
-  display: inline-block;
-  margin-bottom: 20px;
-  margin-right: 0;
-}
-
-.logo__text--header-text-color {
-  color: #212121;
-}
-
-.logo__text--footer-text-color {
-  color: #ffffff;
-}
-
 .main-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -144,7 +116,7 @@ img {
   margin-left: auto;
 }
 
-.contacts-item {
+.contacts__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -153,17 +125,11 @@ img {
           align-items: center;
 }
 
-.contacts-item:not(:last-child) {
+.contacts__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.icon-envelope,
-.icon-smartphone {
-  fill: currentColor;
-  margin-right: 10px;
-}
-
-.contacts-link {
+.contacts__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -182,16 +148,44 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-link:hover,
-.contacts-link:focus,
-.address-contacts-link:hover,
-.address-contacts-link:focus,
-.address-link:hover,
-.address-link:focus {
+.contacts__link:hover, .contacts__link:focus {
   color: #2196f3;
 }
 
-/* герой */
+.contacts__icon-envelope,
+.contacts__icon-smartphone {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+
+.logo--header {
+  margin-right: 93px;
+}
+
+.logo--footer {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-right: 0;
+}
+
+.logo__text--header-text-color {
+  color: #212121;
+}
+
+.logo__text--footer-text-color {
+  color: #ffffff;
+}
+
 .hero {
   text-align: center;
   padding-top: 200px;
@@ -670,6 +664,13 @@ img {
   color: rgba(255, 255, 255, 0.6);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address-contacts-link:hover,
+.address-contacts-link:focus,
+.address-link:hover,
+.address-link:focus {
+  color: #2196f3;
 }
 
 .social-links-footer-box {
