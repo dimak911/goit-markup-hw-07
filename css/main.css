@@ -39,15 +39,7 @@ img {
   padding-bottom: 94px;
 }
 
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-
-.services-header, .team-header, .clients-header {
+.section__title {
   margin-top: 0;
   margin-bottom: 50px;
   font-size: 36px;
@@ -57,7 +49,15 @@ img {
   color: #212121;
 }
 
-.join-box__header, .subscribe__header {
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.join-box__title, .subscribe__title {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -69,7 +69,7 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.header-box {
+.header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,11 +119,11 @@ img {
   color: #2196f3;
 }
 
-.current {
+.main-menu__link--current {
   color: #2196f3;
 }
 
-.current::after {
+.main-menu__link--current::after {
   position: absolute;
   bottom: -1px;
   content: '';
@@ -177,8 +177,7 @@ img {
   color: #2196f3;
 }
 
-.contacts__icon-envelope,
-.contacts__icon-smartphone {
+.contacts__icon {
   fill: currentColor;
   margin-right: 10px;
 }
@@ -193,21 +192,21 @@ img {
   color: #2196f3;
 }
 
-.logo--header {
+.logo__header {
   margin-right: 93px;
 }
 
-.logo--footer {
+.logo__footer {
   display: inline-block;
   margin-bottom: 20px;
   margin-right: 0;
 }
 
-.logo__text--header-text-color {
+.logo__dark {
   color: #212121;
 }
 
-.logo__text--footer-text-color {
+.logo__light {
   color: #ffffff;
 }
 
@@ -552,12 +551,7 @@ img {
   background-position: center;
 }
 
-.hero__container {
-  padding-left: 240px;
-  padding-right: 240px;
-}
-
-.hero__text {
+.hero__title {
   margin-bottom: 30px;
   color: #ffffff;
   font-weight: 900;
@@ -600,7 +594,7 @@ img {
   background-color: #f5f4fa;
 }
 
-.features__header {
+.features__title {
   margin-top: 0;
   margin-bottom: 10px;
   font-size: 14px;
@@ -617,7 +611,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-.section--services {
+.section--no-padding-top {
   padding-top: 0;
 }
 
@@ -652,7 +646,7 @@ img {
   width: 100%;
 }
 
-.services__header {
+.services__title {
   font-size: 14px;
   line-height: 1.14;
   text-align: center;
@@ -661,7 +655,7 @@ img {
   color: #ffffff;
 }
 
-.section--team {
+.section--team-background-color {
   background-color: #f5f4fa;
 }
 
@@ -687,7 +681,7 @@ img {
   padding: 30px 0;
 }
 
-.team__name {
+.team__title {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -696,7 +690,7 @@ img {
   color: #212121;
 }
 
-.team__position {
+.team__text {
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
@@ -716,7 +710,7 @@ img {
   margin-right: 30px;
 }
 
-.clients__company {
+.clients__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -735,7 +729,7 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients__company:hover, .clients__company:focus {
+.clients__link:hover, .clients__link:focus {
   fill: #2196f3;
   border: 1px solid #2196f3;
 }
@@ -750,11 +744,11 @@ img {
   margin-bottom: 50px;
 }
 
-.filter-item:not(:last-child) {
+.filter__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.filter-button {
+.filter__button {
   padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
@@ -773,14 +767,14 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter-button:hover, .filter-button:focus {
+.filter__button:hover, .filter__button:focus {
   color: #ffffff;
   background-color: #2196f3;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.filter-button:active {
+.filter__button:active {
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1) inset, 0px 1px 2px rgba(0, 0, 0, 0.08) inset, 0px 2px 2px rgba(0, 0, 0, 0.12) inset;
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1) inset, 0px 1px 2px rgba(0, 0, 0, 0.08) inset, 0px 2px 2px rgba(0, 0, 0, 0.12) inset;
 }
@@ -857,7 +851,7 @@ img {
   border-bottom: 1px solid #eeeeee;
 }
 
-.work__header {
+.work__title {
   margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
@@ -927,11 +921,11 @@ img {
   margin-right: 93px;
 }
 
-.join-box__header {
+.join-box__title {
   margin-bottom: 20px;
 }
 
-.subscribe__header {
+.subscribe__title {
   margin-bottom: 20px;
 }
 

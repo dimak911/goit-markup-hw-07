@@ -51,16 +51,16 @@
   margin-right: 93px;
 }
 
-.join-box__header {
+.join-box__title {
   margin-bottom: 20px;
-  @extend %footer-text-header;
+  @extend %footer-text-title;
 }
 
 // Подписка
 
-.subscribe__header {
+.subscribe__title {
   margin-bottom: 20px;
-  @extend %footer-text-header;
+  @extend %footer-text-title;
 }
 
 .subscribe__box {

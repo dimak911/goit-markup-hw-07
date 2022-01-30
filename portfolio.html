@@ -27,17 +27,17 @@
   <body>
     <!-- Шапка -->
     <header class="header">
-      <div class="header-box container">
+      <div class="header__container container">
         <nav class="header-nav">
           <!-- Лого -->
-          <a class="logo logo--header" href="./index.html">Web<span class="logo__text logo__text--header-text-color">Studio</span></a>
+          <a class="logo logo__header" href="./index.html">Web<span class="logo__dark">Studio</span></a>
           <!-- Главное меню -->
           <ul class="main-menu">
             <li class="main-menu__item">
               <a class="main-menu__link" href="./index.html">Студия</a>
             </li>
             <li class="main-menu__item">
-              <a class="main-menu__link current" href="./portfolio.html">Портфолио</a>
+              <a class="main-menu__link main-menu__link--current" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="main-menu__item"><a class="main-menu__link" href="">Контакты</a></li>
           </ul>
@@ -46,14 +46,14 @@
         <ul class="contacts">
           <li class="contacts__item">
             <a class="contacts__link" href="mailto:info@devstudio.com">
-              <svg class="contacts__icon-envelope" width="16" height="12">
+              <svg class="contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope">
               </svg>info@devstudio.com</a>
           </li>
           <li class="contacts__item">
             
             <a class="contacts__link" href="tel:+380961111111">
-              <svg class="contacts__icon-smartphone" width="10" height="16">
+              <svg class="contacts__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone">
               </svg>+38 096 111 11 11</a>
           </li>
@@ -67,16 +67,16 @@
           <h1 class="visually-hidden">Портфолио</h1>
           <!-- фильтр -->
           <ul class="filter">
-            <li class="filter-item"><button class="filter-button" type="button">Все</button></li>
-            <li class="filter-item">
-              <button class="filter-button" type="button">Веб-сайты</button>
+            <li class="filter__item"><button class="filter__button" type="button">Все</button></li>
+            <li class="filter__item">
+              <button class="filter__button" type="button">Веб-сайты</button>
             </li>
-            <li class="filter-item">
-              <button class="filter-button" type="button">Приложения</button>
+            <li class="filter__item">
+              <button class="filter__button" type="button">Приложения</button>
             </li>
-            <li class="filter-item"><button class="filter-button" type="button">Дизайн</button></li>
-            <li class="filter-item">
-              <button class="filter-button" type="button">Маркетинг</button>
+            <li class="filter__item"><button class="filter__button" type="button">Дизайн</button></li>
+            <li class="filter__item">
+              <button class="filter__button" type="button">Маркетинг</button>
             </li>
           </ul>
 
@@ -98,7 +98,7 @@
                 </div>
               </div>
               <div class="work__content">
-                <h2 class="work__header">Технокряк</h2>
+                <h2 class="work__title">Технокряк</h2>
                 <p class="work__text">Веб-сайт</p>
               </div>
               </a>
@@ -119,7 +119,7 @@
                 </div>
               </div>
               <div class="work__content">
-                <h2 class="work__header">Постер New Orlean vs Golden Star</h2>
+                <h2 class="work__title">Постер New Orlean vs Golden Star</h2>
                 <p class="work__text">Дизайн</p>
               </div>
               </a>
@@ -140,7 +140,7 @@
                 </div>
               </div>  
               <div class="work__content">
-                <h2 class="work__header">Ресторан Seafood</h2>
+                <h2 class="work__title">Ресторан Seafood</h2>
                 <p class="work__text">Приложение</p>
               </div>
               </a>
@@ -156,7 +156,7 @@
                 </div>
               </div>  
               <div class="work__content">
-                <h2 class="work__header">Проект Prime</h2>
+                <h2 class="work__title">Проект Prime</h2>
                 <p class="work__text">Маркетинг</p>
               </div>
               </a>
@@ -172,7 +172,7 @@
                 </div>
               </div>  
               <div class="work__content">
-                <h2 class="work__header">Проект Boxes</h2>
+                <h2 class="work__title">Проект Boxes</h2>
                 <p class="work__text">Приложение</p>
               </div>
               </a>
@@ -193,7 +193,7 @@
                 </div>
               </div>  
               <div class="work__content">
-                <h2 class="work__header">Inspiration has no Borders</h2>
+                <h2 class="work__title">Inspiration has no Borders</h2>
                 <p class="work__text">Веб-сайт</p>
               </div>
               </a>
@@ -209,7 +209,7 @@
                 </div>
               </div>  
               <div class="work__content">
-                <h2 class="work__header">Издание Limited Edition</h2>
+                <h2 class="work__title">Издание Limited Edition</h2>
                 <p class="work__text">Дизайн</p>
               </div>
               </a>
@@ -225,7 +225,7 @@
                 </div>
               </div>  
               <div class="work__content">
-                <h2 class="work__header">Проект LAB</h2>
+                <h2 class="work__title">Проект LAB</h2>
                 <p class="work__text">Маркетинг</p>
               </div>
               </a>
@@ -246,7 +246,7 @@
                 </div>
               </div>  
               <div class="work__content">
-                <h2 class="work__header">Growing Business</h2>
+                <h2 class="work__title">Growing Business</h2>
                 <p class="work__text">Приложение</p>
               </div>
               </a>
@@ -261,7 +261,7 @@
       <div class="container container--footer">
         <div class="address-box">
           <!-- лого -->
-        <a class="logo logo--footer" href="./index.html">Web<span class="logo__text logo__text--footer-text-color">Studio</span></a>
+        <a class="logo logo__footer" href="./index.html">Web<span class="logo__light">Studio</span></a>
         <address class="address">
           <ul>
             <li class="address__item">
@@ -286,7 +286,7 @@
         </div>
 
         <div class="join-box">
-          <h3 class="join-box__header">Присоединяйтесь</h3>
+          <h3 class="join-box__title">Присоединяйтесь</h3>
           <!-- соцсети -->
           <ul class="socials">
 
@@ -327,7 +327,7 @@
 
         <!-- подписка -->
         <form class="subscribe">
-            <h3 class="subscribe__header">Подпишитесь на рассылку</h3>
+            <h3 class="subscribe__title">Подпишитесь на рассылку</h3>
             <div class="subscribe__box">
               <input class="subscribe__input" type="email" name="email" placeholder="E-mail">
               <button class="subscribe__button" type="submit">Подписаться

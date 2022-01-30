@@ -7,11 +7,11 @@
   margin-bottom: 50px;
 }
 
-.filter-item:not(:last-child) {
+.filter__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.filter-button {
+.filter__button {
   padding: 6px 22px;
 
   font-family: inherit;
@@ -109,7 +109,7 @@
   border-bottom: 1px solid #eeeeee;
 }
 
-.work__header {
+.work__title {
   margin-bottom: 4px;
 
   font-size: 18px;

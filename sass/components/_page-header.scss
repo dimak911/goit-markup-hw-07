@@ -4,7 +4,7 @@
   border-bottom: 1px solid $header-border-color;
 }
 
-.header-box {
+.header__container {
   display: flex;
   align-items: center;
 }
@@ -47,7 +47,7 @@
 }
 
 // Текущая страница
-.current {
+.main-menu__link--current {
   color: $accent-color;
   &::after {
     position: absolute;
@@ -98,8 +98,7 @@
   }
 }
 
-.contacts__icon-envelope,
-.contacts__icon-smartphone {
+.contacts__icon {
   fill: currentColor;
   margin-right: 10px;
 }
