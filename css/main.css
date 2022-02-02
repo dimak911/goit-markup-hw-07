@@ -314,7 +314,6 @@ img {
 }
 
 .modal__close-button {
-  all: unset;
   position: absolute;
   top: 8px;
   right: 8px;
@@ -323,22 +322,11 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #ffffff;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__close-button:hover {
-  -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
-  fill: #2196f3;
-}
-.modal__close-button:focus {
-  -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 0px 1px 1px rgba(0, 0, 0, 0.2) inset;
-          box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 0px 1px 1px rgba(0, 0, 0, 0.2) inset;
-  outline-color: -webkit-focus-ring-color;
-  outline-style: auto;
-  outline-width: 1px;
+.modal__close-button:hover, .modal__close-button:focus {
   fill: #2196f3;
 }
 
